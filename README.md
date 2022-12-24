@@ -66,7 +66,7 @@ First install a wrapper around deno, with this idea implemented:
 deno install --unstable -A -n deno2 https://github.com/sigmaSd/deno-with-permissions-ts/raw/master/main.ts
 ```
 
-To you can try with the chef repo example:
+Then you can try with the chef repo example:
 ```
 deno2  run --print-generated-permissions=true --permissions=https://github.com/sigmaSd/Chef/raw/permissions/permissions.ts https://github.com/sigmaSd/Chef/raw/permissions/example.ts
 ```
