@@ -26,13 +26,6 @@ async function main() {
   await runDeno(permissions, userArgs);
 }
 
-export interface Permissions {
-  read?: string[];
-  write?: string[];
-  env?: string[];
-  net?: string[];
-}
-
 class PermissionsClass {
   read: string[] | undefined;
   write: string[] | undefined;
