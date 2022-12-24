@@ -1,6 +1,7 @@
 import { parse } from "https://deno.land/std@0.170.0/flags/mod.ts";
 import { assert } from "https://deno.land/std@0.170.0/testing/asserts.ts";
 import * as path from "https://deno.land/std@0.170.0/path/mod.ts";
+import { Permissions } from "./api.ts";
 
 /** All new arguments needs to be optional in case the user didn't specify them**/
 interface Deno2 {
