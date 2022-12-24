@@ -6,7 +6,9 @@ import { Permissions } from "./api.ts";
 /** All new arguments needs to be optional in case the user didn't specify them**/
 interface Deno2 {
   permissions?: string;
-  "print-generated-permissions"?: string;
+  //FIXME: how to tell parse that its a bool
+  // so don't expect an argument
+  "print-generated-permissions"?: boolean;
   /** Contains all the arguments that didn't have an option associated with them**/
   _: (string | number)[];
 }
